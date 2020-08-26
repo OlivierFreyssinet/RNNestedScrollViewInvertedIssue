@@ -58,8 +58,8 @@ class App extends React.Component {
     const length = 9
     const preText = "What's shown here illustrates a bug that happens when rendering a nested ScrollView inside an INVERTED FlatList.\n"
     const text = inverted
-      ? 'Flatlist inverted: When the nested ScrollView is scrolled past its edges (overscroll), the FlatList scrolls in the wrong direction'
-      : 'FlatList not inverted: When the nested ScrollView is scrolled past its edges (overscroll), the FlatList scrolls in the wrong direction'
+      ? 'Flatlist inverted: When the nested ScrollView is scrolled past its edges (overscroll), the FlatList scrolls in the WRONG direction'
+      : 'FlatList not inverted: When the nested ScrollView is scrolled past its edges (overscroll), the FlatList scrolls in the EXPECTED direction'
     const items = [... Array(length).keys()]
     return (
       <View
